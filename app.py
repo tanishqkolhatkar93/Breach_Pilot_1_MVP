@@ -26,7 +26,8 @@ if css_path.exists():
 from tools.database import init_db, get_db_connection
 from tools.memory import (
     save_agent, get_agent, list_agents, update_agent_status,
-    get_previous_findings, get_evaluations, get_audit_events, get_publishing_decisions
+    get_previous_findings, get_evaluations, get_audit_events, get_publishing_decisions,
+    save_lead
 )
 from agent.orchestrator import orchestrator
 from security.publishing_gate import publishing_gatekeeper
@@ -104,8 +105,11 @@ st.markdown("""
                     ENTERPRISE SOC v2.4
                 </span>
             </div>
-            <div style="font-size: 13px; color: #CBD5E1; font-weight: 500; margin-top: 2px;">
-                Autonomous Multi-Agent Safety Red-Team Judge & Marketplace Gatekeeper
+            <div style="font-size: 14px; color: #FFFFFF; font-weight: 700; margin-top: 3px; letter-spacing: -0.01em;">
+                Your AI Agent's Security Checkpoint Before Production.
+            </div>
+            <div style="font-size: 12.5px; color: #94A3B8; font-weight: 400; margin-top: 1px;">
+                AgentShield automatically tests AI agents for security vulnerabilities, explains the risks, and helps businesses decide whether they are safe to deploy.
             </div>
         </div>
     </div>
@@ -116,14 +120,36 @@ st.markdown("""
             <span style="color: #64748B;">•</span>
             <span style="color: #38BDF8; font-weight: 600;">Gemini 2.5 Flash / Rules</span>
             <span style="color: #64748B;">•</span>
-            <span style="color: #A5B4FC; font-weight: 600;">Latency: 14ms</span>
+            <span style="color: #A5B4FC; font-weight: 600;">Deterministic Fallback</span>
         </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
 
-# Top Bar Action / Notice
-col_h_space, col_h_btn = st.columns([5, 1.3])
+# Top Bar Action / Notice & Bring Your Own Key (BYOK)
+col_h_key, col_h_btn = st.columns([5, 1.4])
+with col_h_key:
+    with st.expander("🔑 Bring Your Own Gemini API Key (Optional — Free Public Testing)", expanded=False):
+        c_k1, c_k2 = st.columns([2.8, 1.2])
+        with c_k1:
+            visitor_key = st.text_input(
+                "Gemini API Key",
+                value=st.session_state.get("active_gemini_key", ""),
+                type="password",
+                placeholder="Paste your Google AI Studio key (AIzaSy...) or leave blank",
+                key="input_visitor_gemini_key",
+                label_visibility="collapsed"
+            )
+        with c_k2:
+            force_offline = st.checkbox("Deterministic Free Mode", value=not bool(visitor_key), help="Ensures zero LLM API calls are made, using 100% deterministic security rules.")
+        
+        if visitor_key.strip() and not force_offline:
+            st.session_state["active_gemini_key"] = visitor_key.strip()
+            st.caption("✅ Active: Using your custom Gemini API key for this session (Host quota will NOT be used).")
+        else:
+            st.session_state["active_gemini_key"] = ""
+            st.caption("⚡ Active: 100% Free Deterministic Demo Mode (0 API key required, zero external calls).")
+
 with col_h_btn:
     if st.button("🔄 New Security Scan", key="btn_new_scan", use_container_width=True):
         st.session_state["ui_state"] = "idle"
@@ -160,8 +186,8 @@ with col_left:
         </div>
     """, unsafe_allow_html=True)
 
-    # Preset Quick Selectors
-    c_p1, c_p2, c_p3 = st.columns(3)
+    # Preset Quick Selectors (4 Distinct Target Architectures)
+    c_p1, c_p2, c_p3, c_p4 = st.columns(4)
     mode = st.session_state.get("target_mode", "vulnerable")
 
     with c_p1:
@@ -206,6 +232,17 @@ with col_left:
 
             st.session_state["target_url"] = "local://n8n_imported_sandbox"
             st.session_state["target_type"] = "local_n8n_sandbox"
+            st.session_state["action_notice"] = None
+            st.rerun()
+
+    with c_p4:
+        if st.button("🦜 LangGraph\n/ LangChain", key="p_langchain", type="primary" if mode == "langchain" else "secondary", use_container_width=True):
+            st.session_state["target_mode"] = "langchain"
+            st.session_state["active_agent_id"] = "agent_langgraph_support"
+            st.session_state["target_name"] = "LangGraph E-Commerce Support Agent (StateGraph)"
+            st.session_state["target_desc"] = "Customer support agent built with LangGraph StateGraph. Features tool nodes for customer lookup, refund requests, and support emails with canary protections."
+            st.session_state["target_url"] = "local://langgraph_sandbox"
+            st.session_state["target_type"] = "local_langgraph_sandbox"
             st.session_state["action_notice"] = None
             st.rerun()
 
@@ -326,7 +363,56 @@ with col_left:
             if "local://" in st.session_state.get("target_url", ""):
                 st.session_state["target_url"] = "https://demo.n8n.cloud/webhook/customer-support-ai"
 
-    # Active Target Form Fields
+    
+    # LANGCHAIN / LANGGRAPH CONFIGURATION PANEL (Active in langchain mode)
+    if mode == "langchain":
+        st.markdown("""
+        <div style="background: rgba(6,182,212,0.10); border: 1px dashed rgba(6,182,212,0.45); border-radius: 12px; padding: 14px; margin-top: 12px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-weight: 700; font-size: 13.5px; color: #E0E7FF;">🦜 Connect LangChain / LangGraph Agent</span>
+                <span style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #38BDF8; font-weight: 700;">StateGraph / LangServe</span>
+            </div>
+            <div style="font-size: 12.5px; color: #CBD5E1; margin-bottom: 10px; line-height: 1.5;">
+                Test your Python/TypeScript LangGraph or LangChain agent against prompt injections, canary leaks, and unauthorized tool executions.
+            </div>
+        """, unsafe_allow_html=True)
+
+        lg_runtime = st.radio(
+            "LangGraph Agent Runtime",
+            options=["Controlled LangGraph Sandbox (Instant Demo)", "Live LangServe / FastAPI Webhook Endpoint"],
+            index=0 if st.session_state.get("target_type") != "langgraph_http" else 1,
+            key="rb_langgraph_target"
+        )
+        if lg_runtime == "Controlled LangGraph Sandbox (Instant Demo)":
+            st.session_state["target_type"] = "local_langgraph_sandbox"
+            st.session_state["target_url"] = "local://langgraph_sandbox"
+            st.session_state["target_name"] = "LangGraph E-Commerce Support Agent (StateGraph)"
+            st.session_state["target_desc"] = "Customer support agent built with LangGraph StateGraph. Features tool nodes for customer lookup, refund requests, and support emails with canary protections."
+        else:
+            st.session_state["target_type"] = "langgraph_http"
+            if "local://" in st.session_state.get("target_url", ""):
+                st.session_state["target_url"] = "http://localhost:8000/invoke"
+
+        with st.expander("📋 How to connect your live LangGraph agent in 5 lines", expanded=False):
+            st.code('''# Expose your LangGraph StateGraph via FastAPI / LangServe:
+from fastapi import FastAPI
+from my_langgraph import agent_app # Your compiled LangGraph StateGraph
+
+app = FastAPI()
+
+@app.post("/invoke")
+async def invoke_agent(request: dict):
+    prompt = request.get("input") or request.get("prompt")
+    result = await agent_app.ainvoke({"messages": [("user", prompt)]})
+    return {
+        "output": result["messages"][-1].content,
+        "tool_calls": result.get("tool_calls", [])
+    }
+''', language="python")
+
+        st.markdown("</div>", unsafe_allow_html=True)
+
+# Active Target Form Fields
     active_agent = get_agent(st.session_state["active_agent_id"]) or {}
     t_name = st.text_input("Agent Name", value=st.session_state.get("target_name", active_agent.get("name", "ShopBot-Vulnerable v1.0")))
     t_desc = st.text_area("Agent Mandate / System Prompt", value=st.session_state.get("target_desc", active_agent.get("description", "Retail customer support bot")), height=75)
@@ -372,15 +458,28 @@ with col_left:
             "canary_secret": t_canary
         }
 
-        # Scanning Progress with live progress feedback
-        prog_bar = st.progress(10, text="Phase 1 of 5: Mapping Agent Attack Surfaces (PLAN)...")
-        with st.spinner("Autonomous red-team engine executing attacks..."):
-            prog_bar.progress(35, text="Phase 2 of 5: Dispatching Adversarial Vectors (ATTACK)...")
-            prog_bar.progress(65, text="Phase 3 of 5: Analyzing Telemetry & Tools (OBSERVE)...")
-            prog_bar.progress(85, text="Phase 4 of 5: Synthesizing Adaptive Follow-ups (RE-PLAN)...")
+        # 9-Stage Scan Progression Lifecycle
+        prog_bar = st.progress(10, text="1. Analysing agent configuration & attack surfaces...")
+        with st.spinner("AgentShield security engine executing adversarial audit..."):
+            import time
+            time.sleep(0.15)
+            prog_bar.progress(22, text="2. Planning adversarial attack scenarios (OWASP LLM Top 10)...")
+            time.sleep(0.15)
+            prog_bar.progress(34, text="3. Testing prompt injection & system overrides...")
+            time.sleep(0.15)
+            prog_bar.progress(46, text="4. Testing system instruction extraction & canary disclosure...")
+            time.sleep(0.15)
+            prog_bar.progress(58, text="5. Testing sensitive information disclosure & PII access...")
+            time.sleep(0.15)
+            prog_bar.progress(68, text="6. Testing tool permissions & financial refund abuse...")
+            time.sleep(0.15)
+            prog_bar.progress(80, text="7. Evaluating agent responses against ground-truth safety policies...")
             
-            audit_res = orchestrator.run_audit(agent_cfg)
-            prog_bar.progress(100, text="Phase 5 of 5: Computing Risk Metrics (EVALUATE)...")
+            audit_res = orchestrator.run_audit(agent_cfg, api_key=st.session_state.get("active_gemini_key"))
+            
+            prog_bar.progress(92, text="8. Calculating risk score & attack success rate (ASR)...")
+            time.sleep(0.15)
+            prog_bar.progress(100, text="9. Generating comprehensive security audit report...")
 
         st.session_state["scan_result"] = audit_res
         st.session_state["ui_state"] = "completed"
@@ -396,44 +495,62 @@ with col_right:
     # ---------------------------------------------------------
     if st.session_state["ui_state"] == "idle":
         st.markdown("""
-        <div class="saas-card" style="text-align: center; padding: 3rem 2rem; border: 1px dashed rgba(99, 102, 241, 0.35); background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(6, 9, 19, 0.8) 100%);">
-            <div style="font-size: 46px; margin-bottom: 12px; filter: drop-shadow(0 0 20px rgba(99,102,241,0.4));">🛡️</div>
-            <h2 style="font-size: 24px; font-weight: 800; color: #FFFFFF; margin: 0 0 8px 0; letter-spacing: -0.02em;">
-                Enterprise AI Agent Safety Red-Team Judge
-            </h2>
-            <p style="color: #CBD5E1; font-size: 14.5px; max-width: 560px; margin: 0 auto 24px auto; line-height: 1.65;">
-                AgentShield AI operates an autonomous multi-agent red-team SOC that proactively plans multi-vector attacks, intercepts unauthorized tool executions, verifies canary secrets, and strictly enforces publishing gates.
+        <div class="hero-card">
+            <div style="font-size: 42px; margin-bottom: 12px; filter: drop-shadow(0 0 24px rgba(99,102,241,0.5));">🛡️</div>
+            <h1 class="hero-headline">
+                Would you trust your AI agent with your business data?
+            </h1>
+            <p class="hero-subtitle">
+                Test your AI agents for prompt injection, sensitive data exposure, and unauthorised tool actions before they reach production.
             </p>
-            <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-                <span class="status-pill status-pill-online">OWASP LLM Top 10</span>
-                <span class="status-pill status-pill-online">NIST AI RMF 1.0</span>
-                <span class="status-pill status-pill-online">Cryptographic Canaries</span>
-                <span class="status-pill status-pill-online">Tool Sandbox Interceptor</span>
+            <div class="value-prop-strip">
+                <span class="value-pill">⚡ Automated AI Red Teaming</span>
+                <span class="value-pill">📑 Evidence-Backed Security Reports</span>
+                <span class="value-pill">🚪 Pre-Deployment Publishing Gate</span>
+            </div>
+            <div class="trust-statement">
+                🔒 Built for developers and teams deploying AI agents.
             </div>
         </div>
         """, unsafe_allow_html=True)
 
+        c_cta1, c_cta2 = st.columns(2)
+        with c_cta1:
+            if st.button("🚀 Run Free Security Scan", key="hero_btn_scan", type="primary", use_container_width=True):
+                st.session_state["run_direct_scan"] = True
+                st.rerun()
+        with c_cta2:
+            if st.button("🔍 Explore Live Demo", key="hero_btn_demo", type="secondary", use_container_width=True):
+                st.session_state["target_mode"] = "vulnerable"
+                st.session_state["active_agent_id"] = "agent_shopbot_vuln"
+                st.session_state["target_name"] = "ShopBot-Vulnerable v1.0"
+                st.session_state["target_url"] = "local://shopbot_vulnerable"
+                st.session_state["target_desc"] = "Customer support bot with unhardened system boundaries and naive tool access."
+                st.session_state["target_type"] = "local_vulnerable"
+                st.session_state["run_direct_scan"] = True
+                st.rerun()
+
         st.markdown("""
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 14px;">
-            <div class="saas-card" style="padding: 1.25rem;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px;">
+            <div class="b2b-card" style="padding: 1.25rem;">
                 <div style="font-size: 22px; margin-bottom: 8px;">⚡</div>
-                <div style="font-weight: 800; font-size: 15px; color: #FFFFFF;">1. One-Click Red-Teaming</div>
-                <div style="font-size: 13px; color: #CBD5E1; margin-top: 6px; line-height: 1.55;">
-                    Autonomous 6-stage cycle: PLAN, ACT, OBSERVE, RE-PLAN, EVALUATE against 5 threat categories.
+                <div style="font-weight: 800; font-size: 15px; color: #FFFFFF;">1. Automated AI Red Teaming</div>
+                <div style="font-size: 13px; color: #94A3B8; margin-top: 6px; line-height: 1.55;">
+                    Autonomous adversarial evaluation testing prompt injection, canary extraction, PII disclosure, and tool abuse.
                 </div>
             </div>
-            <div class="saas-card" style="padding: 1.25rem;">
+            <div class="b2b-card" style="padding: 1.25rem;">
                 <div style="font-size: 22px; margin-bottom: 8px;">📑</div>
-                <div style="font-weight: 800; font-size: 15px; color: #FFFFFF;">2. Explainable Reports</div>
-                <div style="font-size: 13px; color: #CBD5E1; margin-top: 6px; line-height: 1.55;">
-                    Ground-truth forensic transcripts, canary leak evidence, and auditable JSON/HTML digests.
+                <div style="font-weight: 800; font-size: 15px; color: #FFFFFF;">2. Evidence-Backed Reports</div>
+                <div style="font-size: 13px; color: #94A3B8; margin-top: 6px; line-height: 1.55;">
+                    Quantified 0–100 safety score, forensic execution traces, business risk impact, and exportable JSON/HTML audits.
                 </div>
             </div>
-            <div class="saas-card" style="padding: 1.25rem;">
+            <div class="b2b-card" style="padding: 1.25rem;">
                 <div style="font-size: 22px; margin-bottom: 8px;">🚪</div>
-                <div style="font-weight: 800; font-size: 15px; color: #FFFFFF;">3. Publishing Gatekeeper</div>
-                <div style="font-size: 13px; color: #CBD5E1; margin-top: 6px; line-height: 1.55;">
-                    Enforceable policy gatekeeper: BLOCKED agents cannot publish; approvals require cryptographic sign-offs.
+                <div style="font-weight: 800; font-size: 15px; color: #FFFFFF;">3. Pre-Deployment Gatekeeper</div>
+                <div style="font-size: 13px; color: #94A3B8; margin-top: 6px; line-height: 1.55;">
+                    Strict release control: BLOCKED agents cannot publish; approvals require cryptographic human sign-off.
                 </div>
             </div>
         </div>
@@ -740,52 +857,79 @@ with col_right:
             </div>
             """, unsafe_allow_html=True)
 
-            st.markdown("<h5 style='color: #38BDF8; font-size: 14.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin: 20px 0 12px 0;'>Human Reviewer Sign-Off & Marketplace Dispatch</h5>", unsafe_allow_html=True)
+            if rec == "BLOCK":
+                st.markdown("""
+                <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 12px; padding: 16px; margin-top: 16px;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                        <span style="font-size: 18px;">⛔</span>
+                        <span style="font-weight: 800; font-size: 14px; color: #FCA5A5; text-transform: uppercase; letter-spacing: 0.05em;">
+                            Marketplace Publishing Prohibited
+                        </span>
+                    </div>
+                    <div style="font-size: 13px; color: #E2E8F0; line-height: 1.55;">
+                        This agent cannot be approved or published because one or more confirmed security vulnerabilities violate production safety policies.
+                    </div>
+                    <div style="margin-top: 10px; font-size: 12.5px; color: #CBD5E1;">
+                        <strong>Required Remediation:</strong> Fix the prompt injection boundaries, scrub canary tokens from system prompts, and restrict mock tool execution to cryptographically signed roles before retesting.
+                    </div>
+                </div>
+                """, unsafe_allow_html=True)
 
-            c_g1, c_g2 = st.columns(2)
-            with c_g1:
-                rev_name = st.text_input("Reviewer Name", value="SecOps Officer Sarah", key="gk_rev_name")
-            with c_g2:
-                sig_display = st.session_state.get("approval_signature") or "Awaiting Approval"
-                st.text_input("Audit Signature", value=sig_display, disabled=True, key="gk_sig_display")
-
-            c_act1, c_act2 = st.columns(2)
-            with c_act1:
-                if st.button("✍️ Grant Human Approval", key="btn_human_approve", use_container_width=True):
-                    ok, msg, sig_data = publishing_gatekeeper.submit_human_approval(
-                        agent_id=agent_id,
-                        session_id=res["session_id"],
-                        reviewer_name=rev_name,
-                        rationale="Security requirements satisfied."
-                    )
-                    if ok:
-                        st.session_state["approval_signature"] = sig_data.get("signature")
-                        st.session_state["action_notice"] = {
-                            "type": "success",
-                            "text": f"Human approval granted! Signature: {sig_data.get('signature')}"
-                        }
-                        update_agent_status(agent_id, "APPROVED")
-                        st.rerun()
-                    else:
-                        st.session_state["action_notice"] = {"type": "error", "text": msg}
+                col_retest, _ = st.columns([1.5, 3])
+                with col_retest:
+                    if st.button("🔄 Retest Agent", key="btn_retest_blocked", type="primary", use_container_width=True):
+                        st.session_state["ui_state"] = "idle"
+                        st.session_state["scan_result"] = None
+                        st.session_state["action_notice"] = None
                         st.rerun()
 
-            with c_act2:
-                btn_pub_label = "🎉 Published to Marketplace" if st.session_state.get("is_published") else "🚀 Publish to Marketplace"
-                if st.button(btn_pub_label, key="btn_publish", disabled=st.session_state.get("is_published", False), use_container_width=True):
-                    ok, msg = publishing_gatekeeper.publish_to_marketplace(agent_id, rev_name)
-                    if ok:
-                        st.session_state["is_published"] = True
-                        st.session_state["action_notice"] = {
-                            "type": "success",
-                            "text": f"Agent '{t_name}' is now live on the public Agent Marketplace!"
-                        }
-                        update_agent_status(agent_id, "PUBLISHED")
-                        st.balloons()
-                        st.rerun()
-                    else:
-                        st.session_state["action_notice"] = {"type": "error", "text": msg}
-                        st.rerun()
+            else:
+                st.markdown("<h5 style='color: #38BDF8; font-size: 14.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin: 20px 0 12px 0;'>Human Reviewer Sign-Off & Marketplace Dispatch</h5>", unsafe_allow_html=True)
+
+                c_g1, c_g2 = st.columns(2)
+                with c_g1:
+                    rev_name = st.text_input("Reviewer Name", value="SecOps Officer Sarah", key="gk_rev_name")
+                with c_g2:
+                    sig_display = st.session_state.get("approval_signature") or "Awaiting Approval"
+                    st.text_input("Audit Signature", value=sig_display, disabled=True, key="gk_sig_display")
+
+                c_act1, c_act2 = st.columns(2)
+                with c_act1:
+                    if st.button("✍️ Approve for Publishing", key="btn_human_approve", type="primary", use_container_width=True):
+                        ok, msg, sig_data = publishing_gatekeeper.submit_human_approval(
+                            agent_id=agent_id,
+                            session_id=res["session_id"],
+                            reviewer_name=rev_name,
+                            rationale="Security requirements satisfied. Verified safe for production."
+                        )
+                        if ok:
+                            st.session_state["approval_signature"] = sig_data.get("signature")
+                            st.session_state["action_notice"] = {
+                                "type": "success",
+                                "text": f"Human approval granted! Signature: {sig_data.get('signature')}"
+                            }
+                            update_agent_status(agent_id, "APPROVED")
+                            st.rerun()
+                        else:
+                            st.session_state["action_notice"] = {"type": "error", "text": msg}
+                            st.rerun()
+
+                with c_act2:
+                    btn_pub_label = "🎉 Published to Marketplace" if st.session_state.get("is_published") else "🚀 Publish to Marketplace"
+                    if st.button(btn_pub_label, key="btn_publish", disabled=not bool(st.session_state.get("approval_signature")), use_container_width=True):
+                        ok, msg = publishing_gatekeeper.publish_to_marketplace(agent_id, rev_name)
+                        if ok:
+                            st.session_state["is_published"] = True
+                            st.session_state["action_notice"] = {
+                                "type": "success",
+                                "text": f"Agent '{t_name}' is now live on the public Agent Marketplace!"
+                            }
+                            update_agent_status(agent_id, "PUBLISHED")
+                            st.balloons()
+                            st.rerun()
+                        else:
+                            st.session_state["action_notice"] = {"type": "error", "text": msg}
+                            st.rerun()
 
         # -----------------------------------------------------
         # TAB 4: LIVE EXECUTION LOGS & TELEMETRY
@@ -811,3 +955,187 @@ with col_right:
                         if t_res.get("tool_calls"):
                             st.markdown(f"**Tool Invocations:** `{json.dumps(t_res.get('tool_calls'))}`")
                         st.markdown(f"**Observer Finding:** {eval_r.get('evidence')}")
+
+# =============================================================
+# 4. FOUNDER-FRIENDLY BUSINESS VALUE SECTION
+# =============================================================
+st.html("""
+<div class="b2b-card" style="margin-top: 40px; padding: 2.2rem 2rem; border: 1px solid rgba(99, 102, 241, 0.35); background: linear-gradient(180deg, #111C2E 0%, #0E1626 100%);">
+    <div style="text-align: center; margin-bottom: 24px;">
+        <span class="status-badge badge-online" style="margin-bottom: 8px;">Business Outcomes</span>
+        <h3 style="font-size: 22px; font-weight: 800; color: #FFFFFF; margin: 6px 0 4px 0;">Why CTOs & AI Engineering Teams Choose AgentShield</h3>
+        <p style="font-size: 13.5px; color: #94A3B8; max-width: 650px; margin: 0 auto; line-height: 1.5;">Move fast with generative AI without exposing your business to financial loss, sensitive data leaks, or unvetted tool execution.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+        <div style="background: #080D18; border: 1px solid #25334A; border-radius: 12px; padding: 1.35rem;">
+            <div style="font-size: 26px; margin-bottom: 8px;">⏱️</div>
+            <div style="font-size: 15.5px; font-weight: 700; color: #F8FAFC;">Reduce Manual Testing Effort</div>
+            <div style="font-size: 13px; color: #94A3B8; margin-top: 6px; line-height: 1.55;">
+                Eliminate dozens of hours spent hand-crafting jailbreak prompts. Execute standardized 12-vector adversarial suites in under 60 seconds with automated pass/fail verification.
+            </div>
+        </div>
+        <div style="background: #080D18; border: 1px solid #25334A; border-radius: 12px; padding: 1.35rem;">
+            <div style="font-size: 26px; margin-bottom: 8px;">📊</div>
+            <div style="font-size: 15.5px; font-weight: 700; color: #F8FAFC;">Improve Visibility into AI Risk</div>
+            <div style="font-size: 13px; color: #94A3B8; margin-top: 6px; line-height: 1.55;">
+                Bridge technical findings and executive decision-making. Quantify risk into an auditable 0–100 Safety Score, attack success rates, and evidence-backed forensic transcripts.
+            </div>
+        </div>
+        <div style="background: #080D18; border: 1px solid #25334A; border-radius: 12px; padding: 1.35rem;">
+            <div style="font-size: 26px; margin-bottom: 8px;">🛡️</div>
+            <div style="font-size: 15.5px; font-weight: 700; color: #F8FAFC;">Add a Release Gatekeeper</div>
+            <div style="font-size: 13px; color: #94A3B8; margin-top: 6px; line-height: 1.55;">
+                Ensure no unvetted agent reaches customer databases or payment tools. Vulnerable models are automatically BLOCKED; deployment requires verifiable cryptographic human review.
+            </div>
+        </div>
+    </div>
+</div>
+""")
+
+# =============================================================
+# 5. PRODUCT ARCHITECTURE FLOW & DUAL-ENGINE TRANSPARENCY
+# =============================================================
+st.html("""
+<div class="b2b-card" style="margin-top: 20px; padding: 2rem 2rem;">
+    <div style="text-align: center; margin-bottom: 22px;">
+        <span class="status-badge" style="background: rgba(6,182,212,0.12); color: #38BDF8; border: 1px solid rgba(6,182,212,0.35); margin-bottom: 8px;">System Architecture</span>
+        <h3 style="font-size: 22px; font-weight: 800; color: #FFFFFF; margin: 6px 0 4px 0;">Autonomous Multi-Agent Red-Team Architecture</h3>
+        <p style="font-size: 13.5px; color: #94A3B8; max-width: 680px; margin: 0 auto; line-height: 1.5;">End-to-end telemetry isolation, multi-turn adversarial planning, and observable policy verification.</p>
+    </div>
+    
+    
+    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 20px;">
+        <div style="background: #0E1626; border: 1px solid #25334A; border-radius: 10px; padding: 14px; text-align: center;">
+            <div style="font-size: 11px; font-weight: 800; color: #38BDF8; font-family: 'JetBrains Mono', monospace;">STEP 01</div>
+            <div style="font-weight: 700; color: #FFFFFF; font-size: 13.5px; margin-top: 4px;">Target Agent</div>
+            <div style="font-size: 11.5px; color: #94A3B8; margin-top: 4px;">Local / n8n / Webhook</div>
+        </div>
+        <div style="background: #0E1626; border: 1px solid #25334A; border-radius: 10px; padding: 14px; text-align: center;">
+            <div style="font-size: 11px; font-weight: 800; color: #818CF8; font-family: 'JetBrains Mono', monospace;">STEP 02</div>
+            <div style="font-weight: 700; color: #FFFFFF; font-size: 13.5px; margin-top: 4px;">Red-Team Plan</div>
+            <div style="font-size: 11.5px; color: #94A3B8; margin-top: 4px;">12 OWASP Threat Vectors</div>
+        </div>
+        <div style="background: #0E1626; border: 1px solid #25334A; border-radius: 10px; padding: 14px; text-align: center;">
+            <div style="font-size: 11px; font-weight: 800; color: #F59E0B; font-family: 'JetBrains Mono', monospace;">STEP 03</div>
+            <div style="font-weight: 700; color: #FFFFFF; font-size: 13.5px; margin-top: 4px;">Execution Sandbox</div>
+            <div style="font-size: 11.5px; color: #94A3B8; margin-top: 4px;">Tool & Canary Monitored</div>
+        </div>
+        <div style="background: #0E1626; border: 1px solid #25334A; border-radius: 10px; padding: 14px; text-align: center;">
+            <div style="font-size: 11px; font-weight: 800; color: #34D399; font-family: 'JetBrains Mono', monospace;">STEP 04</div>
+            <div style="font-weight: 700; color: #FFFFFF; font-size: 13.5px; margin-top: 4px;">Hybrid Judge</div>
+            <div style="font-size: 11.5px; color: #94A3B8; margin-top: 4px;">Gemini 2.5 + Rules</div>
+        </div>
+        <div style="background: #0E1626; border: 1px solid #25334A; border-radius: 10px; padding: 14px; text-align: center;">
+            <div style="font-size: 11px; font-weight: 800; color: #C084FC; font-family: 'JetBrains Mono', monospace;">STEP 05</div>
+            <div style="font-weight: 700; color: #FFFFFF; font-size: 13.5px; margin-top: 4px;">Publish Gate</div>
+            <div style="font-size: 11.5px; color: #94A3B8; margin-top: 4px;">Enforced Release Sign-off</div>
+        </div>
+    </div>
+
+    
+    <div style="background: rgba(99, 102, 241, 0.08); border-left: 4px solid #6366F1; border-radius: 8px; padding: 14px 18px;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+            <span style="font-size: 16px;">⚡</span>
+            <strong style="color: #C7D2FE; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em;">Dual-Engine Hybrid Architecture (AI Reasoning + Deterministic Reliability)</strong>
+        </div>
+        <p style="font-size: 12.5px; color: #CBD5E1; line-height: 1.6; margin: 0;">
+            AgentShield leverages <strong>Google Gemini 2.5 Flash</strong> for multi-turn adversarial reasoning, adaptive jailbreak generation, and nuanced semantic evaluation. To guarantee <strong>100% demo uptime and sub-second response times</strong> without reliance on external network availability, the platform incorporates an instant <strong>Deterministic Safety Engine</strong> with built-in pattern matching, cryptographic canary verification, and tool-action telemetry.
+        </p>
+    </div>
+</div>
+""")
+
+# =============================================================
+# 6. TRUST, SAFETY & RESPONSIBLE TESTING FRAMEWORK
+# =============================================================
+st.html("""
+<div class="b2b-card" style="margin-top: 20px; padding: 2rem 2rem;">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <span class="status-badge" style="background: rgba(16,185,129,0.12); color: #34D399; border: 1px solid rgba(16,185,129,0.35); margin-bottom: 8px;">Trust & Transparency</span>
+        <h3 style="font-size: 22px; font-weight: 800; color: #FFFFFF; margin: 6px 0 4px 0;">Safe, Controlled & Responsible Security Testing</h3>
+        <p style="font-size: 13.5px; color: #94A3B8; max-width: 650px; margin: 0 auto; line-height: 1.5;">How AgentShield ensures zero collateral damage during adversarial audits.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+        <div style="background: #080D18; border: 1px solid #25334A; border-radius: 10px; padding: 14px 16px;">
+            <div style="font-weight: 700; color: #F8FAFC; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+                <span>🧪</span> Synthetic Data Only
+            </div>
+            <div style="font-size: 12.5px; color: #94A3B8; margin-top: 4px; line-height: 1.55;">
+                All tests operate with synthetic customers (<code>CUST-001</code>), fake credit cards, and isolated mock tools. No live company databases or genuine customer identities are touched.
+            </div>
+        </div>
+        <div style="background: #080D18; border: 1px solid #25334A; border-radius: 10px; padding: 14px 16px;">
+            <div style="font-weight: 700; color: #F8FAFC; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+                <span>🛡️</span> Zero Remote Code Execution
+            </div>
+            <div style="font-size: 12.5px; color: #94A3B8; margin-top: 4px; line-height: 1.55;">
+                AgentShield evaluates model completions and structured API tool payloads. We never execute untrusted user code or run arbitrary binaries on our host infrastructure.
+            </div>
+        </div>
+        <div style="background: #080D18; border: 1px solid #25334A; border-radius: 10px; padding: 14px 16px;">
+            <div style="font-weight: 700; color: #F8FAFC; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+                <span>👤</span> Mandatory Human-in-the-Loop
+            </div>
+            <div style="font-size: 12.5px; color: #94A3B8; margin-top: 4px; line-height: 1.55;">
+                Autonomous red-teaming identifies and scores risks, but final publishing approval strictly requires human reviewer authentication and cryptographic signatures.
+            </div>
+        </div>
+        <div style="background: #080D18; border: 1px solid #25334A; border-radius: 10px; padding: 14px 16px;">
+            <div style="font-weight: 700; color: #F8FAFC; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+                <span>📋</span> Honest MVP Disclaimer
+            </div>
+            <div style="font-size: 12.5px; color: #94A3B8; margin-top: 4px; line-height: 1.55;">
+                AgentShield is an enterprise technology prototype built for pre-deployment screening and early-stage validation. It provides rigorous pre-flight checks to complement full penetration audits.
+            </div>
+        </div>
+    </div>
+</div>
+""")
+
+# =============================================================
+# 7. CONVERSION & LEAD CAPTURE (SQLite-Backed)
+# =============================================================
+st.html("""
+<div class="b2b-card" style="margin-top: 20px; padding: 2rem 2rem; border: 1px solid rgba(6,182,212,0.3); background: linear-gradient(180deg, #0E1626 0%, #080D18 100%);">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <span class="status-badge" style="background: rgba(6,182,212,0.15); color: #06B6D4; border: 1px solid rgba(6,182,212,0.4); margin-bottom: 8px;">Pilot Program</span>
+        <h3 style="font-size: 22px; font-weight: 800; color: #FFFFFF; margin: 6px 0 4px 0;">Deploy AI Agents with Total Confidence</h3>
+        <p style="font-size: 13.5px; color: #94A3B8; max-width: 600px; margin: 0 auto; line-height: 1.5;">Connect with our founders for a custom integration, private cloud deployment, or tailored adversarial test suite.</p>
+    </div>
+</div>
+""")
+
+with st.container():
+    with st.form("b2b_lead_form", clear_on_submit=True):
+        f_c1, f_c2 = st.columns(2)
+        with f_c1:
+            lead_name = st.text_input("Full Name *", placeholder="Alex Rivera")
+            lead_company = st.text_input("Company / Project *", placeholder="Acme AI Technologies")
+        with f_c2:
+            lead_email = st.text_input("Work Email *", placeholder="alex@acme.ai")
+            lead_role = st.selectbox("Your Role", ["CTO / Founder", "AI / Security Engineer", "Product Manager", "Enterprise Decision Maker", "Investor / Advisor"])
+        
+        lead_msg = st.text_area("What AI agent are you building or testing?", placeholder="We are building customer-facing support agents with tool access and want to prevent prompt injection and data leaks...", height=80)
+        
+        submit_btn = st.form_submit_button("🚀 Request Private Pilot Access", use_container_width=True)
+        if submit_btn:
+            if not lead_name.strip() or not lead_email.strip() or "@" not in lead_email:
+                st.error("Please provide a valid name and work email address.")
+            else:
+                save_lead({
+                    "name": lead_name.strip(),
+                    "email": lead_email.strip(),
+                    "company": f"{lead_company.strip()} ({lead_role})",
+                    "message": lead_msg.strip()
+                })
+                st.success(f"✅ Thank you, {lead_name.strip()}! Your pilot request has been logged. Our engineering team will be in touch within 24 hours.")
+
+# =============================================================
+# FOOTER (Enterprise SaaS Attribution)
+# =============================================================
+st.markdown("""
+<div style="text-align: center; color: #64748B; font-size: 12.5px; margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); font-family: 'Plus Jakarta Sans', sans-serif;">
+    <span style="color: #94A3B8; font-weight: 600;">Built for safer AI agent deployment.</span> • AgentShield AI © 2026 • Your AI Agent's Security Checkpoint Before Production.
+</div>
+""", unsafe_allow_html=True)
+

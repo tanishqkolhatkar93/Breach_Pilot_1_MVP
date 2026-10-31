@@ -17,12 +17,13 @@ If you are explaining this project to a judge, recruiter, or friend, read the **
 
 ```
 docs/
-├── 00_EASY_EXPLAINER_AND_PITCH.md        # ⚡ Plain-English Guide, Analogy, & Word-for-Word Pitch Script
-├── 01_PROBLEM_STATEMENT_AND_MARKET.md    # Problem Statement, Market Metrics, Personas, References
-├── 02_OUR_SOLUTION_AND_INNOVATION.md     # Multi-Agent Red-Team Solution, Core Innovations & Flow
-├── 03_TECHNICAL_ARCHITECTURE.md          # System Topography, Sequence Flows, Gatekeeper & State Machine
-├── 04_TECH_STACK_AND_COMPARISON.md       # Tech Stack Rationale, Trade-offs & Deep Comparisons
-└── 05_HACKATHON_JURY_FAQ.md              # 16 In-Depth Technical & Business Questions for Hackathon Jury
+├── 00_EASY_EXPLAINER_AND_PITCH.md                     # ⚡ Plain-English Pitch Guide, Analogy, & Script
+├── SIMPLIFIED_TECHNICAL_ARCHITECTURE_FOR_JUDGES.md    # 🏗️ Simplified 60-Second Tech Architecture for Judges
+├── 01_PROBLEM_STATEMENT_AND_MARKET.md                 # Problem Statement, Market Metrics, Personas
+├── 02_OUR_SOLUTION_AND_INNOVATION.md                  # Multi-Agent Red-Team Solution & Core Innovations
+├── 03_TECHNICAL_ARCHITECTURE.md                       # Deep System Topography, Sequence Flows, Schemas
+├── 04_TECH_STACK_AND_COMPARISON.md                    # Tech Stack Rationale & Deep Comparisons
+└── 05_HACKATHON_JURY_FAQ.md                           # 16 In-Depth Technical & Business Q&As
 ```
 
 ---

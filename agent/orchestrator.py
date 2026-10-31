@@ -30,12 +30,17 @@ class RedTeamOrchestrator:
     def run_audit(
         self,
         agent_config: Dict[str, Any],
-        on_step_callback: Optional[Callable[[str, Dict[str, Any]], None]] = None
+        on_step_callback: Optional[Callable[[str, Dict[str, Any]], None]] = None,
+        api_key: Optional[str] = None
     ) -> Dict[str, Any]:
         """
         Executes a complete autonomous red-team audit across all phases.
         Calls on_step_callback(phase, payload) to stream live events to UI.
         """
+        if api_key is not None:
+            self.planner = PlannerAgent(api_key=api_key)
+            self.observer = ObserverAgent(api_key=api_key)
+            self.replanner = ReplannerAgent(api_key=api_key)
         agent_id = agent_config.get("id", f"agent_{uuid.uuid4().hex[:8]}")
         session_id = f"sess_{uuid.uuid4().hex[:8]}"
         now = datetime.datetime.now(datetime.timezone.utc).isoformat()

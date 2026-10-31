@@ -293,3 +293,32 @@ def get_publishing_decisions(agent_id: Optional[str] = None) -> List[Dict[str, A
     conn.close()
     return [dict(r) for r in rows]
 
+def save_lead(lead_data: Dict[str, Any]) -> str:
+    """Stores inbound founder/enterprise contact inquiry safely in SQLite."""
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    lead_id = f"lead_{uuid.uuid4().hex[:8]}"
+    now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    cursor.execute("""
+    INSERT INTO leads (id, name, email, company, message, created_at)
+    VALUES (?, ?, ?, ?, ?, ?)
+    """, (
+        lead_id,
+        lead_data.get("name", "Anonymous"),
+        lead_data.get("email", ""),
+        lead_data.get("company", ""),
+        lead_data.get("message", ""),
+        now
+    ))
+    conn.commit()
+    conn.close()
+    return lead_id
+
+def get_leads() -> List[Dict[str, Any]]:
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM leads ORDER BY created_at DESC")
+    rows = cursor.fetchall()
+    conn.close()
+    return [dict(r) for r in rows]
+
