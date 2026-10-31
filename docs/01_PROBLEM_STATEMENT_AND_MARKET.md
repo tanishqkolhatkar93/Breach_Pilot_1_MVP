@@ -6,6 +6,14 @@
 
 ---
 
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+---
+
 ## 1. Executive Summary
 
 As the software industry transitions from passive large language model (LLM) chatbots to **autonomous, tool-augmented AI agents**, the surface area for catastrophic security exploits has increased exponentially. Autonomous agents are endowed with agency: they read external data, query internal databases, invoke financial and operational APIs, execute code, and communicate across multi-agent workflows without constant human-in-the-loop validation.
@@ -13,6 +21,14 @@ As the software industry transitions from passive large language model (LLM) cha
 When an AI agent is published to an enterprise marketplace or customer-facing environment without rigorous adversarial evaluation, a single prompt injection vulnerability can lead directly to unauthorized fund transfers, confidential database exfiltration, and reputational collapse.
 
 **AgentShield AI** solves this critical problem by acting as an **Autonomous Multi-Agent Red-Team Security Operations Center (SOC) and Publishing Gatekeeper**. It proactively plans attacks, executes multi-vector exploits, observes target telemetry, retrieves historical vulnerability patterns from persistent memory, dynamically synthesizes adaptive follow-up payloads, scores risk using an enterprise penalty matrix, and enforces an immutable, state-machine-governed publishing gate.
+
+---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
 
 ---
 
@@ -29,16 +45,664 @@ Under these conditions, standard static analysis and simple prompt filters fail 
 ### The 6 Core Failure Modes of AI Agents
 
 ```
-+-----------------------------------------------------------------------------------+
++---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+-----+
 |                        THE 6 AGENTIC FAILURE MODES                                |
-+-----------------------------------------------------------------------------------+
++---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+-----+
 |  1. Direct & Indirect Prompt Injections (DAN, delimiter breaking, payload wraps)  |
 |  2. System Prompt & Cryptographic Canary Leakage (Secret extraction)              |
 |  3. PII & Sensitive Database Exfiltration (Credit cards, SSNs, balances)          |
 |  4. Tool Abuse & Excessive Privileges (Unauthorized refunds, external emails)    |
 |  5. Scope Drift & Off-Topic Misuse (Malware assistance, unauthorized advice)       |
 |  6. Total Absence of Pre-Deployment Automated Security Verification              |
-+-----------------------------------------------------------------------------------+
++---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+-----+
 ```
 
 #### 1. Prompt Injection and Jailbreaks (OWASP LLM01)
@@ -71,6 +735,14 @@ Currently, agent builders and enterprise marketplace operators rely on manual pr
 
 ---
 
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+---
+
 ## 3. How Big is the Problem? Market Size & Impact
 
 The agentic AI cybersecurity threat is neither theoretical nor distant; it represents an urgent multi-billion-dollar enterprise crisis.
@@ -78,15 +750,639 @@ The agentic AI cybersecurity threat is neither theoretical nor distant; it repre
 ### Real-World Empirical Metrics
 
 ```
-+-------------------------------------------------------------------------------+
++---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+----+
 |                      ENTERPRISE AI BREACH METRICS                             |
-+-------------------------------------------------------------------------------+
++---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+----+
 |  • 13% to 20% of Enterprises report active AI model / application breaches   |
 |  • 97% of Breached Organizations lacked proper AI access & tool controls      |
 |  • $5.89 Million: Average loss per enterprise prompt-injection incident       |
 |  • ₹22 Crore ($2.6M+): Average cost of an enterprise data breach in India     |
 |  • 80%+ of Enterprise apps will embed autonomous agents by 2027 (Gartner)     |
-+-------------------------------------------------------------------------------+
++---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+----+
 ```
 
 1. **AI Application Breach Prevalence (13% – 20%)**:
@@ -103,19 +1399,675 @@ The agentic AI cybersecurity threat is neither theoretical nor distant; it repre
 
 ---
 
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+---
+
 ## 4. Target Audience
 
 AgentShield AI addresses the needs of four distinct enterprise buyer segments:
 
 ```
-+----------------------------------------------------------------------------------+
++---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+----+
 |                             TARGET AUDIENCE                                      |
-+----------------------------------------------------------------------------------+
++---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+----+
 |  1. Enterprise AI Platform & Security Teams (SecOps, AppSec, AI Red Teams)       |
 |  2. Public & Private AI Agent Marketplace Operators (App Stores, Internal Hubs)  |
 |  3. Autonomous Agent Developers & Startups (SaaS, FinTech, E-commerce, Health)   |
 |  4. Chief Information Security Officers (CISOs) & Compliance Officers (GRC)      |
-+----------------------------------------------------------------------------------+
++---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+------
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
+
+----+
 ```
 
 1. **Enterprise AI Platform & SecOps Teams**:
@@ -126,6 +2078,14 @@ AgentShield AI addresses the needs of four distinct enterprise buyer segments:
    - Engineering teams who need a rapid, deterministic security testing harness to benchmark agent defenses, debug permission leakage, and obtain auditable safety compliance certificates.
 4. **CISOs & GRC (Governance, Risk, Compliance) Officers**:
    - Executive leaders requiring quantitative risk scores, immutable audit logs, and compliance mapping (OWASP LLM Top 10, NIST AI RMF, EU AI Act) for AI agent fleets.
+
+---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
 
 ---
 
@@ -180,6 +2140,14 @@ To ensure real-world utility, AgentShield AI is engineered around three detailed
   - Provides dual target presets (`ShopBot-Vulnerable` vs `ShopShield-Secure`) as architectural blueprints.
   - Runs 100% offline with zero external API dependencies using deterministic evaluation fallbacks.
   - Highlights exact failure lines, prompt canary leaks, and unauthorized tool calls for instant remediation.
+
+---
+
+> ### 💡 In Simple Words (How to explain this problem in 30 seconds):
+> - **The Problem:** Today, anyone can build an AI agent and connect it to company tools (like databases, emails, and refund systems).
+> - **The Risk:** But 90%+ of these agents are vulnerable! An attacker can trick the bot into giving away customer credit cards, leaking company passwords, or sending unauthorized $500 refunds.
+> - **The Cost:** A single prompt injection breach costs companies an average of **$5.89 Million** (₹22 Crore in India).
+> - **Our Solution:** AgentShield AI acts as an automated safety inspector. It attacks the agent before it gets published, scores it, and **blocks dangerous bots** from reaching users.
 
 ---
 

@@ -4,22 +4,34 @@
 > **Problem 01:** AI Agent Safety Red-Team Judge  
 > **Tagline:** *"Attack. Evaluate. Protect. Before You Publish."*
 
-Welcome to the comprehensive documentation suite for **AgentShield AI**, an autonomous, multi-agent cybersecurity judge and publishing gatekeeper designed to stress-test, evaluate, and guardrail AI agents before they are deployed to public marketplaces.
+---
+
+## ⚡ Quick Start: Need to Explain This Fast?
+If you are explaining this project to a judge, recruiter, or friend, read the **Easy Explainer & Pitch Guide**:
+👉 **[00. Easy Explainer & 2-Minute Pitch Guide (Start Here!)](./00_EASY_EXPLAINER_AND_PITCH.md)**  
+*(Includes 30-second elevator pitch, simple Airport Security analogy, word-for-word demo script, and quick answers to jury questions.)*
 
 ---
 
-## 📚 Documentation Suite Overview
-
-This documentation is divided into 5 modular, comprehensive chapters:
+## 📚 Complete Documentation Suite Overview
 
 ```
 docs/
-├── 01_PROBLEM_STATEMENT_AND_MARKET.md   # Problem Statement, Market Metrics, Personas, References
-├── 02_OUR_SOLUTION_AND_INNOVATION.md    # Multi-Agent Red-Team Solution, Core Innovations & Flow
-├── 03_TECHNICAL_ARCHITECTURE.md         # System Topography, Sequence Flows, Gatekeeper & State Machine
-├── 04_TECH_STACK_AND_COMPARISON.md      # Tech Stack Rationale, Trade-offs & Deep Comparisons
-└── 05_HACKATHON_JURY_FAQ.md             # 16 In-Depth Technical & Business Questions for Hackathon Jury
+├── 00_EASY_EXPLAINER_AND_PITCH.md        # ⚡ Plain-English Guide, Analogy, & Word-for-Word Pitch Script
+├── 01_PROBLEM_STATEMENT_AND_MARKET.md    # Problem Statement, Market Metrics, Personas, References
+├── 02_OUR_SOLUTION_AND_INNOVATION.md     # Multi-Agent Red-Team Solution, Core Innovations & Flow
+├── 03_TECHNICAL_ARCHITECTURE.md          # System Topography, Sequence Flows, Gatekeeper & State Machine
+├── 04_TECH_STACK_AND_COMPARISON.md       # Tech Stack Rationale, Trade-offs & Deep Comparisons
+└── 05_HACKATHON_JURY_FAQ.md              # 16 In-Depth Technical & Business Questions for Hackathon Jury
 ```
+
+---
+
+### 0. [00. Easy Explainer & 2-Minute Pitch Guide](./00_EASY_EXPLAINER_AND_PITCH.md)
+- **The Airport TSA Analogy:** How AgentShield scans AI agents just like airport scanners scan luggage.
+- **The 5 Attacks Explained in Plain English:** No heavy jargon.
+- **2-Minute Demo Presentation Script:** Exactly what to say during the hackathon judging turn.
+- **Top 5 Jury Questions Answered in 1 Sentence:** Short, crisp, and confident answers.
 
 ---
 

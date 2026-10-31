@@ -644,23 +644,7 @@ with col_right:
         # TAB 2: BENCHMARK EVALUATION CASES (12 DISTINCT VECTORS)
         # -----------------------------------------------------
         with tab_benchmark:
-            st.markdown("""
-            <div style="background: rgba(99, 102, 241, 0.08); border-left: 4px solid #6366F1; border-radius: 8px; padding: 14px 18px; margin-bottom: 16px;">
-                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-                    <span style="font-size: 16px;">💡</span>
-                    <span style="font-weight: 800; font-size: 13px; color: #C7D2FE; text-transform: uppercase; letter-spacing: 0.5px;">Multi-Vector Threat Architecture (Not Duplicates)</span>
-                </div>
-                <p style="font-size: 12.5px; color: #CBD5E1; line-height: 1.6; margin: 0 0 10px 0;">
-                    Each test targets a <strong>completely distinct attack technique</strong> within that category. Real-world adversaries use multiple attack vectors because an agent can easily block basic keyword overrides while remaining vulnerable to persona switches or indirect data injections.
-                </p>
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; font-size: 12px; color: #94A3B8;">
-                    <div>• <strong style="color: #38BDF8;">Prompt Injection (T01–T03):</strong> T01 Direct Command Overrides vs. T02 Persona Hijacking (DAN) vs. T03 Indirect Document Payloads.</div>
-                    <div>• <strong style="color: #38BDF8;">System Extraction (T04–T05):</strong> T04 General Prompt Leaks vs. T05 Seeded Cryptographic Canary Tokens (<code style="color: #A5B4FC;">CANARY-9981-ALPHA</code>).</div>
-                    <div>• <strong style="color: #38BDF8;">PII Extraction (T06–T07):</strong> T06 Single Customer Record (Card/SSN) vs. T07 Bulk Database Dumps & Customer Balances.</div>
-                    <div>• <strong style="color: #38BDF8;">Tool Abuse (T09–T10):</strong> T09 Unauthorized Financial Theft ($500 Refund) vs. T10 Unauthorized External Email Dispatch.</div>
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
+            st.html("""<div style="background: rgba(99, 102, 241, 0.08); border-left: 4px solid #6366F1; border-radius: 8px; padding: 14px 18px; margin-bottom: 16px;"><div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;"><span style="font-size: 16px;">💡</span><span style="font-weight: 800; font-size: 13px; color: #C7D2FE; text-transform: uppercase; letter-spacing: 0.5px;">Multi-Vector Threat Architecture (12 Distinct Techniques)</span></div><p style="font-size: 12.5px; color: #CBD5E1; line-height: 1.6; margin: 0 0 10px 0;">Each test targets a <strong>completely distinct attack technique</strong> within that category. Real-world adversaries use multiple attack vectors because an agent can easily block basic keyword overrides while remaining vulnerable to persona switches or indirect data injections.</p><div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; font-size: 12px; color: #94A3B8;"><div>• <strong style="color: #38BDF8;">Prompt Injection (T01–T03):</strong> T01 Direct Command Overrides vs. T02 Persona Hijacking (DAN) vs. T03 Indirect Document Payloads.</div><div>• <strong style="color: #38BDF8;">System Extraction (T04–T05):</strong> T04 General Prompt Leaks vs. T05 Seeded Cryptographic Canary Tokens (<code style="color: #A5B4FC;">CANARY-9981-ALPHA</code>).</div><div>• <strong style="color: #38BDF8;">PII Extraction (T06–T07):</strong> T06 Single Customer Record (Card/SSN) vs. T07 Bulk Database Dumps & Customer Balances.</div><div>• <strong style="color: #38BDF8;">Tool Abuse (T09–T10):</strong> T09 Unauthorized Financial Theft ($500 Refund) vs. T10 Unauthorized External Email Dispatch.</div></div></div>""")
 
             evals = get_evaluations(res['session_id'])
             if not evals:
@@ -687,6 +671,8 @@ with col_right:
             sorted_evals = sorted(evals, key=sort_test_cases)
 
             table_rows = ""
+            current_category = None
+
             for ev in sorted_evals:
                 t_id = ev.get('test_id', '')
                 passed = bool(ev.get("passed"))
@@ -696,44 +682,30 @@ with col_right:
                 if t_id.startswith("ADP"):
                     v_name = v_info.get("vector") or f"Adaptive Probe: {ev.get('name') or ev.get('category')} Escalation"
                     id_cell = f"<span style='color: #C084FC; font-weight: 800;'>⚡ {t_id}</span>"
+                    c_name = "Adaptive Re-Planner Probes"
                 else:
                     v_name = v_info.get("vector", ev.get("category", "Adversarial Probe"))
                     id_cell = f"<span style='color: #38BDF8; font-weight: 800;'>{t_id}</span>"
+                    c_name = ev.get('category', v_info.get("category", "Security Check"))
+                
+                v_desc = v_info.get("description", "")
+
+                # Emit Category Header Banner whenever Category changes to eliminate column repetition
+                if c_name != current_category:
+                    current_category = c_name
+                    is_adaptive = "Adaptive" in c_name
+                    banner_bg = "rgba(99, 102, 241, 0.12)" if not is_adaptive else "rgba(192, 132, 252, 0.14)"
+                    banner_border = "#6366F1" if not is_adaptive else "#C084FC"
+                    banner_icon = "📁" if not is_adaptive else "⚡"
+                    banner_text_col = "#C7D2FE" if not is_adaptive else "#F5D0FE"
                     
-                c_name = ev.get('category', v_info.get("category", "Security Check"))
+                    table_rows += f'<tr style="background: {banner_bg}; border-top: 1px solid {banner_border}; border-bottom: 1px solid rgba(255, 255, 255, 0.08);"><td colspan="4" style="padding: 9px 14px; font-weight: 800; font-size: 11.5px; color: {banner_text_col}; letter-spacing: 0.5px; text-transform: uppercase;">{banner_icon} Threat Category: {c_name}</td></tr>'
 
-                table_rows += f"""
-                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
-                    <td style="padding: 10px 12px; font-family: 'JetBrains Mono', monospace; font-size: 12px;">{id_cell}</td>
-                    <td style="padding: 10px 12px; font-weight: 600; color: #F8FAFC; font-size: 12.5px;">{c_name}</td>
-                    <td style="padding: 10px 12px;">
-                        <span style="background: rgba(99, 102, 241, 0.15); border: 1px solid rgba(99, 102, 241, 0.35); color: #C7D2FE; padding: 3px 8px; border-radius: 4px; font-size: 11.5px; font-weight: 500;">
-                            {v_name}
-                        </span>
-                    </td>
-                    <td style="padding: 10px 12px;">{pass_badge}</td>
-                    <td style="padding: 10px 12px; font-size: 12px; color: #CBD5E1;">{ev.get('actual_result')}</td>
-                </tr>
-                """
+                desc_html = f'<div style="font-size: 11.5px; color: #94A3B8; margin-top: 3px; line-height: 1.4;">{v_desc}</div>' if v_desc else ''
+                table_rows += f'<tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);"><td style="padding: 10px 12px; font-family: \'JetBrains Mono\', monospace; font-size: 12px; vertical-align: top;">{id_cell}</td><td style="padding: 10px 12px; vertical-align: top;"><div style="font-weight: 700; color: #F8FAFC; font-size: 13px;">{v_name}</div>{desc_html}</td><td style="padding: 10px 12px; vertical-align: top;">{pass_badge}</td><td style="padding: 10px 12px; font-size: 12px; color: #CBD5E1; vertical-align: top; line-height: 1.4;">{ev.get("actual_result")}</td></tr>'
 
-            st.markdown(f"""
-            <div style="background: #0B1120; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; overflow: hidden; margin-top: 8px; margin-bottom: 16px;">
-                <table class="benchmark-table">
-                    <thead>
-                        <tr>
-                            <th>Test ID</th>
-                            <th>Threat Category</th>
-                            <th>Specific Attack Vector / Technique</th>
-                            <th>Result</th>
-                            <th>Outcome Summary</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {table_rows}
-                    </tbody>
-                </table>
-            </div>
-            """, unsafe_allow_html=True)
+            table_html = f'<div style="background: #0B1120; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; overflow: hidden; margin-top: 8px; margin-bottom: 16px;"><table class="benchmark-table" style="width: 100%; border-collapse: collapse;"><thead><tr><th style="width: 12%; padding: 10px 12px; text-align: left; background: #111827; color: #94A3B8; font-size: 12px; text-transform: uppercase;">Test ID</th><th style="width: 48%; padding: 10px 12px; text-align: left; background: #111827; color: #94A3B8; font-size: 12px; text-transform: uppercase;">Specific Attack Vector & Target</th><th style="width: 12%; padding: 10px 12px; text-align: left; background: #111827; color: #94A3B8; font-size: 12px; text-transform: uppercase;">Result</th><th style="width: 28%; padding: 10px 12px; text-align: left; background: #111827; color: #94A3B8; font-size: 12px; text-transform: uppercase;">Defense Outcome & Forensic Trace</th></tr></thead><tbody>{table_rows}</tbody></table></div>'
+            st.html(table_html)
 
         # -----------------------------------------------------
         # TAB 3: PUBLISHING GATEKEEPER

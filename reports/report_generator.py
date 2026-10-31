@@ -171,6 +171,7 @@ def generate_html_report(session_summary: Dict[str, Any], findings: List[Dict[st
     sorted_evaluations = sorted(evaluations, key=sort_test_cases)
 
     eval_rows = ""
+    current_category = None
     for ev in sorted_evaluations:
         passed = bool(ev.get("passed"))
         pass_badge = "<span style='color: #10B981; font-weight: bold;'>PASS</span>" if passed else "<span style='color: #EF4444; font-weight: bold;'>FAIL</span>"
@@ -180,23 +181,37 @@ def generate_html_report(session_summary: Dict[str, Any], findings: List[Dict[st
         if t_id.startswith("ADP"):
             vector_name = vector_info.get("vector") or f"Adaptive Probe: {ev.get('name') or ev.get('category')} Escalation"
             id_display = f"<span style='color: #C084FC; font-weight: 800;'>⚡ {t_id}</span>"
+            cat_name = "Adaptive Re-Planner Probes"
         else:
             vector_name = vector_info.get("vector", ev.get("category", "Adversarial Probe"))
             id_display = f"<span style='color: #38BDF8; font-weight: 700;'>{t_id}</span>"
-            
-        cat_name = ev.get('category', vector_info.get("category", "Security Check"))
+            cat_name = ev.get('category', vector_info.get("category", "Security Check"))
+
+        v_desc = vector_info.get("description", "")
+
+        # Category group banner to eliminate duplicate category columns
+        if cat_name != current_category:
+            current_category = cat_name
+            is_adp = "Adaptive" in cat_name
+            bg_color = "rgba(99, 102, 241, 0.14)" if not is_adp else "rgba(192, 132, 252, 0.16)"
+            txt_color = "#C7D2FE" if not is_adp else "#F5D0FE"
+            eval_rows += f"""
+            <tr style="background: {bg_color}; border-top: 1px solid #4F46E5; border-bottom: 1px solid #1E293B;">
+                <td colspan="4" style="padding: 10px 14px; font-weight: 800; font-size: 12px; color: {txt_color}; text-transform: uppercase; letter-spacing: 0.5px;">
+                    📁 Threat Category: {cat_name}
+                </td>
+            </tr>
+            """
 
         eval_rows += f"""
         <tr style="border-bottom: 1px solid #1E293B;">
-            <td style="padding: 10px; font-family: monospace;">{id_display}</td>
-            <td style="padding: 10px; font-weight: 600; color: #F1F5F9;">{cat_name}</td>
-            <td style="padding: 10px; color: #A5B4FC; font-size: 13px;">
-                <span style="background: rgba(99, 102, 241, 0.15); border: 1px solid rgba(99, 102, 241, 0.3); padding: 3px 8px; border-radius: 4px; font-weight: 500;">
-                    {vector_name}
-                </span>
+            <td style="padding: 10px; font-family: monospace; vertical-align: top;">{id_display}</td>
+            <td style="padding: 10px; vertical-align: top;">
+                <div style="font-weight: 700; color: #F1F5F9; font-size: 13px;">{vector_name}</div>
+                {f'<div style="font-size: 12px; color: #94A3B8; margin-top: 2px;">{v_desc}</div>' if v_desc else ''}
             </td>
-            <td style="padding: 10px;">{pass_badge}</td>
-            <td style="padding: 10px; font-size: 13px; color: #CBD5E1;">{ev.get('actual_result')}</td>
+            <td style="padding: 10px; vertical-align: top;">{pass_badge}</td>
+            <td style="padding: 10px; font-size: 13px; color: #CBD5E1; vertical-align: top;">{ev.get('actual_result')}</td>
         </tr>
         """
 
@@ -345,11 +360,10 @@ def generate_html_report(session_summary: Dict[str, Any], findings: List[Dict[st
         <table>
             <thead>
                 <tr>
-                    <th>Test ID</th>
-                    <th>Category</th>
-                    <th>Specific Attack Vector / Technique</th>
-                    <th>Result</th>
-                    <th>Outcome Summary</th>
+                    <th style="width: 12%;">Test ID</th>
+                    <th style="width: 48%;">Specific Attack Vector & Target</th>
+                    <th style="width: 12%;">Result</th>
+                    <th style="width: 28%;">Defense Outcome & Forensic Trace</th>
                 </tr>
             </thead>
             <tbody>
